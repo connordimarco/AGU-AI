@@ -19,7 +19,7 @@ data/abstracts.jsonl              21,762 articles from GRL, JGR Space Physics, a
 data/received_dates.csv           Crossref received and accepted dates by DOI
 data/pangram_scores.jsonl         Pangram-4 score per DOI (fraction AI, AI-assisted, human)
 data/pangram_human_controls.jsonl Pangram-4 scores for 300 pre-LLM abstracts from these journals
-data/pangram_ai_controls.jsonl    Pangram-4 scores for 30 LLM-written test abstracts
+data/pangram_ai_controls.jsonl    30 LLM-written test abstracts: text, generating model, and Pangram-4 score
 results/word_changes.csv          per-word shares by year and 2024 excess over trend
 ```
 
