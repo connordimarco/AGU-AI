@@ -259,16 +259,11 @@ for g, lab, col, mk in [("non_native", "institutions in non-predominantly\nEngli
 release_line(ax, label=True, y=0.98)
 d_non = mean(flesch_period[("non_native", "after")]) - mean(flesch_period[("non_native", "before")])
 d_nat = mean(flesch_period[("native", "after")]) - mean(flesch_period[("native", "before")])
-ax.text(0.03, 0.05, f"before vs after, non-predominantly English-speaking nations: {d_non:+.1f} points\n"
-        f"predominantly English-speaking nations: {d_nat:+.1f} points\ndifference: {d_non - d_nat:+.1f} (p ≈ 1e-11)",
-        transform=ax.transAxes, fontsize=9, va="bottom",
-        bbox=dict(boxstyle="round,pad=0.45", fc="white", ec=GRAY, alpha=0.95))
 year_ticks(ax, short=False)
 ax.set_xlabel("Publication year (*2026 partial)")
 ax.set_ylabel("Reading ease (Flesch score; higher = easier)")
 ax.set_title("(a)  Readability fell in every author group", loc="left")
-ax.set_ylim(12.5, ax.get_ylim()[1])
-ax.legend(loc="center left", bbox_to_anchor=(0.02, 0.36), fontsize=8.5)
+ax.legend(loc="lower left", fontsize=8.5)
 
 b = [1e4 * boosters_y[y] / words_y[y] for y in YEARS]
 h = [1e4 * hedges_y[y] / words_y[y] for y in YEARS]
