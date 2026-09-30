@@ -1,6 +1,6 @@
 # Code and data for "Large Language Models Shifted Geophysics Abstracts Toward Emphasis, Not Clarity"
 
-C. DiMarco, T. Pulkkinen, S. Hill. Commentary submitted to *JGR: Space Physics*.
+C. DiMarco, S. Hill, T. Pulkkinen. Commentary submitted to *Perspectives of Earth and Space Scientists*.
 
 `python3 make_figures.py` reads `data/` and writes the paper's two figures to `figures/`.
 It also prints the numbers quoted in the text. Needs Python 3 and matplotlib.
